@@ -3,6 +3,8 @@ rfc7946-to-d3
 
 Converts [rfc7946 geojson](https://tools.ietf.org/html/rfc7946#section-3.1.6) polygons to [d3 compatible](https://github.com/d3/d3-geo#d3-geo) ones: d3 requires clockwise winding order whereas rfc7946 specifies the opposite. See also https://github.com/d3/d3-geo/pull/79.
 
+![](https://travis-ci.org/tyrasd/rfc7946-to-d3.svg)
+
 Usage
 -----
 
