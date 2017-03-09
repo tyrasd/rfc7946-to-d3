@@ -9,7 +9,7 @@ if (process.stdin.isTTY && !process.argv[2]) {
     process.exit(1)
 }
 
-(argv.length > 2 ? fs.createReadStream(process.argv[2]) : process.stdin).pipe(concat(convert))
+(process.argv.length > 2 ? fs.createReadStream(process.argv[2]) : process.stdin).pipe(concat(convert))
 
 function convert(data) {
     process.stdout.write(JSON.stringify(rfc7946tod3(JSON.parse(data))))

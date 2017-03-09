@@ -1,6 +1,6 @@
 {
   "name": "rfc7946-to-d3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts rfc7946 geojson polygons to d3 compatible ones: d3 requires clockwise winding whereas rfc7946 specifies the opposite. See https://github.com/d3/d3-geo/pull/79",
   "main": "index.js",
   "bin": "rfc7946-to-d3",
