@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var rfc7946tod3 = require('./'),
+    concat = require('concat-stream'),
+    fs = require('fs')
+
+if (process.stdin.isTTY && !process.argv[2]) {
+    process.stderr.write('no input found')
+    process.exit(1)
+}
+
+(argv.length > 2 ? fs.createReadStream(process.argv[2]) : process.stdin).pipe(concat(convert))
+
+function convert(data) {
+    process.stdout.write(JSON.stringify(rfc7946tod3(JSON.parse(data))))
+}
+
